@@ -464,7 +464,7 @@ function findAllOccurences(arr, item) {
  *    ['rock', 'paper', 'scissors']     => 'rock,paper,scissors'
  */
 function toStringList(arr) {
-   throw new Error('Not implemented');
+   return arr.join(',');
 }
 
 
@@ -532,7 +532,10 @@ function getIdentityMatrix(n) {
  *     3, 3   => [ 3 ]
  */
 function getIntervalArray(start, end) {
-   throw new Error('Not implemented');
+   let arr = new Array(end-start+1);
+   arr = arr.fill(start);
+   let arr1 = arr.map((curr, next) => curr+next);
+   return arr1;
 }
 
 /**
@@ -547,6 +550,11 @@ function getIntervalArray(start, end) {
  *   [ 1, 1, 2, 2, 3, 3, 4, 4] => [ 1, 2, 3, 4]
  */
 function distinct(arr) {
+   /*let res = arr.some(function(cur, next){
+      if(cur != next) return cur;
+      return;
+   });
+   return res;*/
    throw new Error('Not implemented');
 }
 
@@ -637,7 +645,26 @@ function getElementByIndexes(arr, indexes) {
  * 
  */
 function swapHeadAndTail(arr) {
-    throw new Error('Not implemented');
+   //arr.join('');
+   /*if(arr.length % 2 !=0)
+   {let head = arr.slice(0,arr.length/2);
+   let tail = arr.slice(arr.length/2, arr.length);
+   let newArr = [];
+   newArr.push(tail);
+   newArr.push(String(head));
+   return newArr;
+   }
+   else{
+      let head = arr.slice(0,arr.length/2-1);
+      let mid = arr.length/2;
+   let tail = arr.slice(arr.length/2+1, arr.length);
+   let newArr = [];
+   newArr.push(tail);
+   newArr.push(String(mid));
+   newArr.push(String(head));
+   return newArr;
+   }*/
+   throw new Error('Not implemented');
 }
 
 

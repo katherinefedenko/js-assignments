@@ -31,6 +31,7 @@
  * @return {RegExp}
  */
 function getRegexForGuid() {
+   ///\b[0-9A-F]{8}\b/gi;
    throw new Error('Not implemented');
 }
 
