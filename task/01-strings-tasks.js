@@ -108,7 +108,14 @@ function removeLeadingAndTrailingWhitespaces(value) {
     //return value.trimLeft() || value.trimRight();
     
     //else return value.replace(/\s+$/, "");*/
-    throw new Error('Not implemented');
+    //let str ='';
+    if(value[0] == ' '|| value[0] =='\t'){
+        value = value.trimStart();
+        if(value[value.length-1]==' '|| value[value.length-1] =='\t') value = value.trimEnd();
+    } 
+    if(value[value.length-1]==' ' || value[value.length-1] == '\t') value = value.trimEnd();
+    return value;
+    //throw new Error('Not implemented');
 
 }
 

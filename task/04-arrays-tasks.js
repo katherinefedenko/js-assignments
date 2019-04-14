@@ -268,10 +268,13 @@ function toArrayOfSquares(arr) {
  *   [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ] => [ 1, 3, 6, 10, 15, 21, 28, 36, 45, 55 ]
  */
 function getMovingSum(arr) {
-  /* let sumArr = arr.reduce(function(curr,next,arr){
-      return curr+next;
+   /*let newArr = arr.map(function(curr,next){
+      //let sumArr = arr.reduce(function(curr,next,arr){
+         return curr+next;
+      //});
+      //return sumArr;
    });
-   return sumArr;*/
+   return newArr;*/
    throw new Error('Not implemented');
 }
 
@@ -385,6 +388,7 @@ function sortDigitNamesByNumericOrder(arr) {
       'eight':8,
       'nine':9,
    }*/
+   
    throw new Error('Not implemented');
 }
 
